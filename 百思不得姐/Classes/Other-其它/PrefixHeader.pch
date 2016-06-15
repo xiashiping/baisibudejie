@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by 夏世萍 on 16/5/29.
+//  Copyright © 2016年 夏世萍. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XSPcategory.h"
+#import "UIBarButtonItem+XSPkuozhan.h"
+#import "XSPGonst.h"
+#import "NSDate+XSPExtension.h"
+
+#ifdef DEBUG
+#define XSPLog(...) NSLog(__VA_ARGS__)
+#else
+#define XSPLog(...)
+#endif
+
+#define XSPLogFunc XSPLog(@"%s",__func__)
+
+//设置控制器的背景颜色
+#define XSPBGColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+
+
+
+#endif /* PrefixHeader_pch */
